@@ -11,28 +11,26 @@ Clone this repo, and run `npm install` from inside it. The repo already includes
 1. Pass a `name` property to each `Account` component, one for "Checking", the other for "Savings".  These will be used and accessed as `props`for our component.
 
 
-### In `src/Account.js`
+### In `src/Account.jsx`
 
 2. Use the property you set in `App.js` to add the name of the account to the `<h2>`.
     Save your work. You should see two components named Checking and Savings.  You're getting there!
 
 
-3. Add a `balance` property to `state`, and set to 0 initially, in the Account component.
+3. Add a new `useState` hook with a getter of `balance` and a setter of `setBalance`, and set to 0 initially, in the Account component.
 
+4. Add a new `useState` hook with a getter of `input`, and a setter of `setInput`, and set to `""` initially, in the Account component.
 
-4. Create an event listener that stores the current value in the input to state. You will need two variables in state, one to store the current balance, one to store what is typed in the input box. (**Hint**: all input data is stored as a string, you will need to convert the data to an integer! Check out `parseInt()`)
+5. Create an event listener that stores the current value in the input to state. (**Hint**: all input data is stored as a string, you will need to convert the data to an integer! Check out `e.target.valueAsNumber`)
 
-5. When the `Deposit` button is clicked, you should add the amount entered in the text field to the balance
+6. When the Deposit button is clicked, you should add the amount entered in the text field to the balance.
 
+7. When the Withdraw button is clicked, you should deduct the amount entered in the text field to the balance.  **You should not be able to withdraw more than the current balance.**
 
-
-6. When the `Withdraw` button is clicked, you should deduct the amount entered in the text field to the balance.  **You should not be able to withdraw more than the current balance**
-
-
-7. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">`.
+8. If the current balance is 0, you should add a class of `zero` to the `<div className="balance">`.
 #### Bonus: 
 
 - Handling an edge case
     - As it stands, our app breaks if we hit Deposit or Withdraw on an empty form. Or if we put letters in there! How can we update our functionality to avoid this problem?
     - **hint:** Don't assume NaN behaves as you might expect :)
-- Refactor the common code out of handleWithdrawlClick and handleDepositClick into a helper function or two.
+

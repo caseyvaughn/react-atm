@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from './ga.png';
 import Account from './Account';
 
