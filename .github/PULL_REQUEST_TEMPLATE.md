@@ -1,14 +1,26 @@
-![GA Cog](./cog.png)
+<img src="./src/assets/cog.png" />
 
-| **Self Assessment** |              |
-| ------------------- | ------------ |
-| Completeness        | 0 (out of 3) |
-| Comfort level       | 0 (out of 5) |
+| **Self Assessment** |     |
+| :------------------ | :-- |
+| Comfort level       | ?/5 |
+| HW Complete?        | Y   |
+| Bonus Complete?     | P   |
+| CSS Bonus Complete? | N/A |
 
-#### Win:
+_Y = Yes, N = No, P = Partial, N/A = Not Applicable_
 
-#### Struggle:
+## Wins
 
-#### Questions to Instructors:
+Did you solve this on your own, without Google's help? Describe the wins you had during tonight's homework assignment.
 
-#### Comments:
+## Struggles
+
+Were you stuck on a question/concept? Describe any difficulties that you had with this assignment.
+
+## Questions
+
+If you have any questions about this assignment or for the instructors, please add them here!
+
+## Comments
+
+If you have any comments/feedback you want to share or express about the assignment, here's the space where you can.
