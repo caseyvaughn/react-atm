@@ -1,7 +1,7 @@
-function Account() {
+function Account(props) {
   return (
     <div className="account">
-      <h2>TODO: CHANGE TO PROP</h2>
+      <h2>{props.name}</h2>
       <div className="balance">$0</div>
       <input type="text" placeholder="enter an amount" />
       <button>Deposit</button>
