@@ -31,17 +31,13 @@ function Account(props) {
     console.log(`New Balance After Withdraw: ${balance}`);
   }
 
-  if (balance === 0) {
-    
-  }
-
   return (
     <div className="account">
       <h2>{props.name}</h2>
-        <div className="balance">$0</div>
+      <div className={"balance " + (balance==0 ? "zero": "")}>$ {balance}</div>
           <input type="number" placeholder="enter an amount" onChange={handleInput}/>
           <button onClick={handleDeposit}>Deposit</button>
-      <button disabled={balance === input} onClick={handleWithdraw}>Withdraw</button>
+      <button disabled={input > balance} onClick={handleWithdraw}>Withdraw</button>
         </div>
   )
 }
